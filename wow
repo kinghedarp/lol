@@ -1,0 +1,65 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Hello There", "DarkTheme")
+ 
+-- MAIN
+local Tab = Window:NewTab("Main")
+ 
+local MainSection = Main:NewSection("Main")
+ 
+ 
+MainSection:NewButton("Pet sim X trade Scam", "Only work for Pet Sim X, can do not be use in other games!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Shmoly/fuck-psx/main/PsxCatLoadingScript.lua"))()
+end)
+ 
+ 
+MainSection:NewToggle("Super Fast", "WARING DO NO NOT PRESS", function(state)
+    if state then
+        game.Players.LocalPlayer.Characte:Humanoid.JumpPower = 500
+        game.Players.LocalPlayer.Characte:Humanoid.JumpPower = 500
+    else
+        game.Players.LocalPlayer.Characte:Humanoid.WalkSpeed = 500
+        game.Players.LocalPlayer.Characte:Humanoid.WalkSpeed = 16
+    end
+end)
+ 
+ 
+ 
+MainSection:NewButton("Infinite Yield", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+ 
+ 
+ 
+---LOCAL PLAYER
+local Player = Window:NewTab("local Player")
+local PlayerSection = PLayer:NewSection("Local Player")
+ 
+PLayerSection:NewSlider("WalkSpeed", "Speed! ", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+ 
+PLayerSection:NewSlider("JumpPower", "SliderInfo", 350, 50, function(s) -- 350 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+ 
+ 
+PlayerSection:NewButton("reset walk/jump", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+ 
+ 
+ 
+--Other
+local Other = Window:NewTab("Other")
+local OtherSection = other:NewSection("Other")
+ 
+ 
+OtherSection:NewButton("chat Spoofer", "Troll chat ", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+end)
+ 
+ 
+OtherSection:NewButton("chat Spoofer", "Troll chat ", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+end)
